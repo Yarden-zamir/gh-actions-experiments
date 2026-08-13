@@ -1,0 +1,219 @@
+name: 100 native parallel steps in one job
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions: {}
+
+jobs:
+  parallel-steps:
+    name: Run 100 native parallel steps
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - parallel:
+          - name: Parallel step 1
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 2
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 3
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 4
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 5
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 6
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 7
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 8
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 9
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 10
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 11
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 12
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 13
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 14
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 15
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 16
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 17
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 18
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 19
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 20
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 21
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 22
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 23
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 24
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 25
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 26
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 27
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 28
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 29
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 30
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 31
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 32
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 33
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 34
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 35
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 36
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 37
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 38
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 39
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 40
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 41
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 42
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 43
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 44
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 45
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 46
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 47
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 48
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 49
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 50
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 51
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 52
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 53
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 54
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 55
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 56
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 57
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 58
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 59
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 60
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 61
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 62
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 63
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 64
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 65
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 66
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 67
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 68
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 69
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 70
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 71
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 72
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 73
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 74
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 75
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 76
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 77
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 78
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 79
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 80
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 81
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 82
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 83
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 84
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 85
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 86
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 87
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 88
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 89
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 90
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 91
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 92
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 93
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 94
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 95
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 96
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 97
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 98
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 99
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 100
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+
+      - name: Confirm parallel group completed
+        run: echo "All 100 native parallel steps completed."
