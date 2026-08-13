@@ -2,14 +2,10 @@
 
 Small, reproducible experiments for GitHub Actions behavior and performance.
 
-## 100 concurrent tests in one job
+## 10 native parallel steps in one job
 
-The workflow runs 100 asynchronous Node.js tests concurrently on one GitHub-hosted runner. A start barrier prevents any test from finishing until all 100 have started, and the final assertion requires a measured peak concurrency of exactly 100.
+The workflow uses GitHub Actions' native `parallel` keyword to run 10 separate steps concurrently in one job. Each step waits for 10 seconds and prints its start and end timestamps in a separate Actions log.
 
-This demonstrates task concurrency within one job, not 100-way CPU parallelism. All tests share the job's runner, CPU, memory, and filesystem.
+Ten is GitHub's documented maximum number of concurrent background steps in one job. Additional steps are queued until a slot becomes available.
 
-Run it locally with:
-
-```sh
-node --test test/concurrency.test.mjs
-```
+This demonstrates Actions step concurrency, not 10-way CPU parallelism. All steps share the job's runner, CPU, memory, and filesystem.

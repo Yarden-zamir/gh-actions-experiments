@@ -1,0 +1,39 @@
+name: 10 native parallel steps in one job
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions: {}
+
+jobs:
+  parallel-steps:
+    name: Run 10 native parallel steps
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - parallel:
+          - name: Parallel step 1
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 2
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 3
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 4
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 5
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 6
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 7
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 8
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 9
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+          - name: Parallel step 10
+            run: date --iso-8601=ns; sleep 10; date --iso-8601=ns
+
+      - name: Confirm parallel group completed
+        run: echo "All 10 native parallel steps completed."
